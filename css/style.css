@@ -1,0 +1,442 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DMSans', sans-serif;
+    line-height: 1;
+}
+@font-face {
+  font-family: 'DMSans';
+  src: url('../assets/fonts/static/DMSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url('../assets/fonts/static/DMSans-MediumItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url('../assets/fonts/static/DMSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(8, auto);
+    width: 100%;
+    height: auto;
+    background-color:hsl(0, 0%, 96%) ;
+    gap: 25px;
+}
+.social-media{
+    order: 1;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    background-color:hsl(256, 67%, 59%) ;
+    color: white;
+}
+.social-media .multi{
+    color:hsl(41, 99%, 70%);
+    font-size: 2.5rem;
+}
+.social-media img{
+    width: 70%;
+    height: auto;
+    margin-top: 1rem;
+}
+.social-media .sub{
+    font-size: 1rem; 
+    font-style: italic;
+    font-weight: 400;
+    color: hsl(261, 100%, 90%);
+    margin-top: 0.5rem;
+}
+.faster{
+    display: inline;
+    font-style: italic;
+}
+.manage{
+    order: 2;
+    width: 90%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+.manage div{
+    height:100%;
+    width: 90%;
+    font-size:1.8rem;
+    font-weight: 500;
+}
+
+.maintain{
+    order: 3;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    background-color: hsl(40, 100%, 70%);
+    border-radius: 15px;
+    padding: 1rem;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+.maintain div{
+    font-size: 1.8rem;
+    font-weight: 500;
+
+}
+.maintain img{
+    width: 60%;
+    position: relative;
+    top: 21px;
+}
+.schedule{
+    order: 4;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    background-color: hsl(255, 88%, 90%);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center ;
+    text-align: center;
+    padding: 2rem 0;
+}
+.schedule img{
+    width: 90%;
+    height: auto;
+    margin: 1rem 0;
+}
+.schedule div{
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 100%;
+}
+.schedule span{
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    font-weight: 400;
+    width: 100%;
+}
+.porcentaje{
+    order: 5;
+    width: 90%;
+    height: 100%;
+    background-color: hsl(256, 67%, 59%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 1.5rem 0;
+}
+.porcentaje img{
+    width: 60%;
+    height: auto;
+}
+.porcentaje div{
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    font-weight: 550;
+    color: white;
+    padding: 0 5rem;
+}
+.grow{
+    order: 6;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;   
+    padding: 1.5rem; 
+    gap: .5rem;
+}
+.grow img{
+    width: 50%;
+    height: auto;
+    margin-top: 1rem;
+}
+.grow div{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.grow span{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.create{
+    order: 7;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: hsl(30, 71%, 93%);
+    padding: 1.8rem;
+    border-radius: 15px;
+}
+.create img{
+    width: 65%;
+    height: auto;
+    margin-top: 1.5rem;
+}
+.create div{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.create span{
+    color: hsl(256, 67%, 60%);
+    font-style: italic;
+}
+.write{
+    order: 8;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    background-color:hsl(40, 100%, 71%);
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+.write img{
+    width: 80%;
+    height: auto;
+    margin-top: 1rem;
+}
+.write div{
+    font-size: 2.2rem;
+}
+@media screen and (min-width:1000px){
+    body{
+        background-color:hsl(0, 0%, 96%);
+    }
+    img{
+        max-width: 200%;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(3, 33%);
+        width: 60%;
+        margin: 3rem  auto;
+        background-color: hsl(0, 0%, 96%);
+        height: 100vh;
+        justify-items: center;
+        align-items: center;
+        gap: 25px;
+        margin-bottom: 5rem;
+    }
+    .create,.social-media,.manage,.maintain,.schedule,.porcentaje,.grow,.write{
+        order: initial;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .create {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        height: 75%;
+        align-self: self-start;
+        padding: 25px;
+        font-family: 'DMSans';
+        font-weight: 400;
+    }
+    .create div{
+        font-size: 2rem;
+    }
+    .create img{
+        width: 80%;
+    }
+    .social-media {
+        grid-column-start: 2;
+        grid-column-end:4;
+        padding: 10% 5%;
+        font-size: 50px;
+        gap:0;
+    }
+    .social-media img{
+        width: 40%;
+    }
+    .social-media span{
+        font-size: 20px;
+    }
+    .manage {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        background-color: white;
+        border-radius: 15px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+    }
+    .manage div{
+        font-size: 1.6rem;
+        font-weight: 500;
+        height:60%;
+        width: 70%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        text-align: left;
+
+    }
+    .manage img{
+        width: 125%;
+        height: auto;
+        margin-bottom: 10px;
+        position: relative;
+        left: 50px;
+        overflow:hidden;
+    }
+    .maintain{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        gap: 0;
+    }
+    .maintain div {
+        width: 80%;
+        height: 20%;
+        font-size: 1.7rem;
+        font-weight: 500;
+        padding: 0;
+        margin: 0;
+
+
+    }
+    .maintain img{
+        width: 80%;
+        height: auto;
+        position: relative;
+        top: 80px;
+        margin: 0;
+        padding: 0;
+    }
+    .schedule {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+    }
+    .schedule img{
+        height: 55%;
+        margin-left: 130px;
+        width: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+
+    }
+    .schedule span{
+        font-size: 1em;
+    }
+    .schedule div{
+        font-size: 1.8em;
+        font-weight: 500;
+    }
+    .porcentaje {
+        grid-row-start: 3;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    .grow span{
+        width: 80%;
+        font-size: 1rem;
+    }
+    .grow{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: start;
+    }
+    .grow div{
+        font-size: 3.5rem;
+        font-weight: 400;
+        width: 80%;
+    }
+    .grow img{
+        width: 75%;
+    }
+    .write {
+        position: relative;
+        height: 150%;
+        top: -25%;
+    }
+    .write div{
+        width: 80%;
+        font-size: 1.rem;
+    }
+    .write img{
+        width: 75%;
+        margin-top:3rem ;
+    }
+    .porcentaje{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem;
+        margin: 0;
+        text-align: left;
+    }
+    .porcentaje img{
+        width: 55%;
+    }
+    .porcentaje div{
+        width: 60%;
+        margin: 0;
+        padding: 0;
+    }
+
+}
